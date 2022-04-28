@@ -1,0 +1,743 @@
+:root {
+  --color-primary: #2f9e44;
+  --color-primary-darker: #2a8e3d;
+  --color-primary-darkest: #267e36;
+  --color-primary-heading: #0e2f14;
+  --color-primary-lighter: #eaf5ec;
+  --color-green: #59d102;
+  --color-yellow: #ffea00;
+  --color-yellow-dark: #fab005;
+  --color-yellow-light: #fff7e6;
+  --color-orange-section: #fdf2e9;
+  --color-grey-dark: #333;
+  --color-grey-light: #bbb;
+  --color-grey-tint-1: #ccc;
+  --color-grey-tint-2: #eee;
+  --color-grey-tint-3: #aaa;
+  --color--white: #fff;
+  --color--tag-red: #f03e3e;
+}
+
+/*****************************************/
+/* HEADER */
+/*****************************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.2rem;
+  background-color: #eeeeee57;
+  /* Because we want header to be sticky later */
+  height: 7rem;
+
+  /* in order to mobile navigation work */
+  position: relative;
+}
+.logo {
+  height: 6rem;
+}
+
+/*****************************************/
+/* NAVIGATION */
+/*****************************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: #333;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.7rem;
+  transition: all 0.3s;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: var(--color-primary-darker);
+}
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  background-color: var(--color-primary);
+  color: var(--color--white);
+  border-radius: 9px;
+  padding: 1.2rem 2.4rem;
+}
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: var(--color-primary-darker);
+}
+/* mobile navigation  */
+.btn-mobile-nav {
+  background: none;
+  border: none;
+  display: none;
+}
+.icon-mobile-nav {
+  font-size: 4.8rem;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+/* sticky navigation  */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.979);
+  z-index: 50;
+  height: 6.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.05);
+}
+
+.sticky .hero-section {
+  margin-top: 7rem;
+}
+/*****************************************/
+/***HERO SECTION */
+/*****************************************/
+
+.hero-section {
+  background-color: #eeeeee57;
+  padding: 7rem 0;
+  position: relative;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 9.6rem;
+  padding: 0 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+.hero-img {
+  width: 100%;
+}
+
+.delivered-meal {
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.delivered-img {
+  display: flex;
+}
+
+.delivered-img img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  border: 3px solid var(--color--white);
+  margin-right: -1.6rem;
+}
+.delivered-img img:last-child {
+  margin: 0;
+}
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--color-primary-heading);
+}
+.delivered-text span {
+  color: var(--color-primary-darker);
+  font-weight: 600;
+}
+
+/*****************************************/
+/***How it works */
+/*****************************************/
+
+.step-img-box {
+  display: flex;
+  justify-content: center;
+}
+.step-img {
+  width: 90%;
+  border-radius: 12px;
+}
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+  color: var(--color-yellow-dark);
+  padding: 1.6rem;
+  margin-bottom: 1.6rem;
+  border-radius: 50%;
+  background-color: var(--color-yellow-light);
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.163);
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/*****************************************/
+/*** SECTION MEALS */
+/*****************************************/
+.section-meals {
+  background-color: #eeeeee57;
+}
+
+.meal {
+  background-color: var(--color--white);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.meal:hover {
+  transform: translateY(-9px);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.09);
+}
+.grid-gap-meal {
+  gap: 9.6rem;
+}
+
+.meal-img {
+  width: 100%;
+}
+.meal-tag {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(--color--white);
+  border-radius: 10px;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+.tag-veg {
+  background-color: var(--color-green);
+}
+.tag-gluten {
+  background-color: var(--color-yellow);
+}
+.tag-nonveg {
+  background-color: var(--color--tag-red);
+}
+.meal-name {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+}
+.list-detail strong {
+  font-weight: 500;
+}
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+.icon-main {
+  width: 2.6rem;
+  height: 2.6rem;
+  color: var(--color-yellow-dark);
+}
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: var(--color-primary);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: var(--color-primary-darker);
+  border-bottom: 1px solid transparent;
+}
+
+/*****************************************/
+/*** SECTION Gallery */
+/*****************************************/
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+.gallery__item {
+  overflow: hidden;
+}
+
+.gallery-img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.15);
+}
+
+/* ------------ slider------------*/
+.section-testimonials {
+  position: relative;
+}
+.slider {
+  /* not giving with and margin as container class alreay have */
+  max-width: 100rem;
+  margin: 0 auto;
+  position: relative;
+  height: 50rem;
+  background-image: var();
+  border-radius: 9px;
+  box-shadow: 0 1.2rem 3.4rem rgba(0, 0, 0, 0.045);
+  overflow: hidden;
+  background-color: var(--color-yellow-light);
+}
+.slide {
+  width: 100%;
+  height: 50rem;
+
+  /* ---positioning of slide--- */
+
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.8s ease-out;
+}
+
+/* ------------ Slider btn------------*/
+.slider__btn {
+  cursor: pointer;
+  font-size: 3rem;
+  color: var(--color-yellow-dark);
+  background-color: var(--color--white);
+  border-radius: 50%;
+  padding: 0.8rem;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+}
+
+.slider__btn--left {
+  left: 9%;
+  transform: translate(-50%, -50%);
+}
+.slider__btn--right {
+  right: 9%;
+  transform: translate(50%, -50%);
+}
+
+/* ------------ dots------------*/
+
+.dots {
+  display: flex;
+  gap: 1.2rem;
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dots__dot {
+  width: 1.2rem;
+  height: 1.2rem;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color--white);
+  cursor: pointer;
+  margin-right: 3px;
+}
+.dots__dot--active {
+  background-color: var(--color-yellow-dark);
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.258);
+}
+
+/* ------------Testimonials------------*/
+.testimonial {
+  width: 70%;
+  background-color: var(--color--white);
+  padding: 3.2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50rem;
+  box-shadow: 0 1.2rem 4.2rem rgba(0, 0, 0, 0.088);
+}
+
+.testimonial-img {
+  width: 80%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.testimonial-heading {
+  color: #333;
+  font-size: 3rem;
+  margin-bottom: 1.8rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.testimonial-text {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+.testimonial-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  color: #444;
+}
+.testimonial-loaction {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/*****************************************/
+/*** SECTION FEATURES */
+/*****************************************/
+.section-features {
+  position: relative;
+  margin-top: 14rem;
+  margin-bottom: 14rem;
+}
+
+.section-features {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.286),
+      rgba(0, 0, 0, 0.412)
+    ),
+    url(/img/bbbb.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.feature {
+  background-color: var(--color--white);
+  text-align: center;
+  padding: 2.4rem;
+  transition: all 0.4s;
+  cursor: pointer;
+  border-radius: 11px;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.356);
+}
+
+.feature:hover {
+  transform: translateY(-9px);
+  border-top-right-radius: 50px;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 9px;
+}
+.feature-heading {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 600;
+  color: var(--color-grey-dark);
+  margin-bottom: 1.6rem;
+}
+.feature-description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/*****************************************/
+/*** SECTION PRICING */
+/*****************************************/
+.section-pricing {
+  border-bottom: 1px solid rgba(238, 238, 238, 0.532);
+}
+.pricing-container-type {
+  /* to center the container justify self */
+  border: 1px solid #eefae6;
+  border-radius: 11px;
+  padding: 4.8rem;
+}
+
+.type-1 {
+  justify-self: end;
+}
+
+.type-2 {
+  justify-self: start;
+  background-color: var(--color-primary-lighter);
+  border: 1px solid var(--color-primary-lighter);
+  position: relative;
+  overflow: hidden;
+}
+
+.type-2::after {
+  position: absolute;
+  content: "Best Value";
+  top: 4.5%;
+  right: -20.7%;
+  transform: rotate(45deg);
+  background-color: var(--color-primary);
+  color: var(--color--white);
+  font-size: 1.4rem;
+  padding: 0.8rem 8rem;
+}
+
+.plan-type {
+  display: block;
+  gap: 1.2rem;
+  text-transform: uppercase;
+  color: var(--color-primary-darker);
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-bottom: 1.8rem;
+}
+
+.price {
+  font-size: 6.2rem;
+  font-weight: 700;
+  color: var(--color-grey-dark);
+  margin-bottom: 1.2rem;
+}
+.price span {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.price-description {
+  font-size: 1.2rem;
+  color: var(--color-grey-light);
+  margin-bottom: 3.2rem;
+}
+
+.list-details-text {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.plan-details {
+  margin-top: 4.4rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--color-grey-light);
+  text-align: center;
+}
+
+/*****************************************/
+/*** SECTION CTA */
+/*****************************************/
+.section-cta {
+  margin-bottom: 9.6rem;
+}
+
+.cta {
+  background-color: var(--color-yellow-light);
+  grid-template-columns: 2fr 1fr;
+  background-image: var(--gradient-primary);
+  overflow: hidden;
+  border-radius: 11px;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.063);
+}
+.cta-img-box {
+  position: relative;
+}
+
+.cta-img-box {
+  background-image: url(../img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.cta-text-box {
+  padding: 4.8rem;
+  color: #555;
+}
+.cta-text-box .heading-secondary {
+  color: #444;
+  margin-bottom: 2.4rem;
+}
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 3.4rem;
+}
+.cta-form {
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form input,
+.cta-form select {
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.09);
+  width: 100%;
+  padding: 1.6rem;
+  border: none;
+  border-radius: 11px;
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+
+.cta-form select {
+  cursor: pointer;
+  background-color: #fff !important;
+}
+.cta-form input ::placeholder {
+  color: var(--color-grey-tint-3);
+}
+.cta-form label {
+  display: block;
+  margin-bottom: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cta-btn {
+  border: none;
+  align-self: end;
+  background-color: var(--color-yellow-dark);
+  color: var(--color--white);
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.036);
+  padding: 1.6rem;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.cta-btn:hover {
+  background-color: var(--color--white);
+  color: #333;
+}
+
+/*****************************************/
+/*** FOOTER */
+/*****************************************/
+.footer {
+  padding: 9.6rem 0;
+  background-color: var(--color-grey-dark);
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .logo {
+  height: 4.4rem;
+}
+
+.social-links {
+  margin-top: 1.8rem;
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon,
+.contacts,
+.footer-nav {
+  color: var(--color-grey-tint-1);
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-top: auto;
+  color: var(--color-grey-tint-1);
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+  color: var(--color-grey-tint-2);
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+  color: var(--color-grey-tint-1);
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: var(--color--white);
+  border-bottom: 0.1px solid var(--color--white);
+}
+/* developer info */
+.developer {
+  background-color: var(--color-grey-dark);
+}
+.developer-description {
+  border-top: 1px solid rgba(238, 238, 238, 0.189);
+  text-align: center;
+  color: rgba(238, 238, 238, 0.527);
+  padding: 2.4rem 0;
+  line-height: 1.8;
+  font-size: 1.2rem;
+}
+
+.developer-name:link,
+.developer-name:visited {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #ddd;
+  margin-bottom: 1rem;
+}
+.developer-name:hover,
+.developer-name:active {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}

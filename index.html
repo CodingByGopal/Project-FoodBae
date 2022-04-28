@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="FoodBae is AI-powered Food subscription that will make you eat delicious and healthy 365 days per year. Eat well without breaking the bank, let FoodBae AI take care of your nutritional need"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="icon" href="img/favicon-512.png" />
+    <link rel="apple-touch-icon" href="img/apple-screen.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link href="css/general.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/queries.css" rel="stylesheet" />
+    <link href="css/animations.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+    <title>FoodBae &mdash; AI powered Food Subscription!</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img src="img/FoodBea-logo.png" alt="foodbae logo" class="logo"
+      /></a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#how" class="main-nav-link">How it works</a></li>
+          <li><a href="#meals" class="main-nav-link">Meals</a></li>
+          <li><a href="#gallery" class="main-nav-link">Gallery</a></li>
+          <li>
+            <a href="#testimonials" class="main-nav-link">Testimonials</a>
+          </li>
+          <li><a href="#pricing" class="main-nav-link">Pricing</a></li>
+          <li><a href="#cta" class="main-nav-link nav-cta">Fry for free</a></li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary moveLeftAnimation">
+              The flavours of your wish delivered to your doorstep, every single
+              day
+            </h1>
+            <p class="hero-description moveRightAnimation">
+              Delicious 365-days-per-year food subscription will delivered
+              straight from our kitchen to your heart. We cook 100% personalized
+              meal based on your tastes and nutritional needs.
+            </p>
+            <a
+              href="#cta"
+              class="btn btn--full margin-right-sm moveBottomAnimation"
+              >Start Eating Delightly
+            </a>
+            <a href="#how" class="btn btn--outline moveBottomAnimation"
+              >Learn More &darr;</a
+            >
+            <div class="delivered-meal">
+              <div class="delivered-img">
+                <img src="img/customer/customer-1.jpg" alt="customer photo" />
+                <img src="img/customer/customer-2.jpg" alt="customer photo" />
+                <img src="img/customer/customer-3.jpg" alt="customer photo" />
+                <img src="img/customer/customer-4.jpg" alt="customer photo" />
+                <img src="img/customer/customer-5.jpg" alt="customer photo" />
+                <img src="img/customer/customer-6.jpg" alt="customer photo" />
+              </div>
+              <p class="delivered-text">
+                <span>150,000+</span> meals delivered last year!
+              </p>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <picture>
+              <source srcset="img/food.webp" type="image/webp" />
+              <source srcset="img/food-min.png" type="image/png" />
+              <img
+                src="img/food-min.png"
+                class="hero-img"
+                alt="delicious food in three images"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-how section-padding" id="how">
+        <div class="container">
+          <span class="subheading">How it works</span>
+          <h2 class="heading-secondary">
+            Your delighted meal in 3 simple steps
+          </h2>
+        </div>
+        <div class="container grid grid--2-cols grid-gap grid-center-v section">
+          <!-- STEP 01 -->
+          <div class="step-img-box">
+            <img
+              src="img/app/food-personalization.png"
+              data-src="img/app/food-personalization-animation.gif"
+              alt="app screen for Personalize meal"
+              class="step-img lazy-img"
+            />
+          </div>
+          <div class="step-text-box">
+            <div class="icon-container step-icon">
+              <ion-icon class="icon" name="pizza-outline"></ion-icon>
+            </div>
+            <h3 class="heading-tertiary">Personalize your meal as per taste</h3>
+            <p class="step-description">
+              Save your time. Let FoodBae AI decide, weekly meal plan for you.
+              Meal will be 100% personalized and It makes sure you get all the
+              flavours and nutrients, no matter what diet you follow! It's most
+              easy way to get healthy and delicious food quickly
+            </p>
+          </div>
+          <!-- STEP 02 -->
+          <div class="step-text-box">
+            <div class="icon-container step-icon">
+              <ion-icon class="icon" name="checkmark-circle-outline"></ion-icon>
+            </div>
+            <h3 class="heading-tertiary">Approve your meal plan, weekly</h3>
+            <p class="step-description">
+              You can approve the meal plan generated for you by FoodBae AI,
+              twice per week. You can change ingredients, spices, swap entire
+              meals, or even add your own taste. So don't worry about
+              ingredients, swap it we will cook as per your taste
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img
+              src="img/app/approval.png"
+              data-src="img/app/approval-animation.gif"
+              alt="elvi food"
+              class="step-img lazy-img"
+            />
+          </div>
+          <!-- STEP 03 -->
+          <div class="step-img-box">
+            <img
+              src="img/app/delivery.png"
+              data-src="img/app/delivery-animation.gif"
+              alt="elvi food"
+              class="step-img lazy-img"
+            />
+          </div>
+          <div class="step-text-box">
+            <div class="icon-container step-icon">
+              <ion-icon class="icon" name="time-outline"></ion-icon>
+            </div>
+            <h3 class="heading-tertiary">Meal delivery at convenient time</h3>
+            <p class="step-description">
+              Our chefs will cook your selected recipe every day, and will
+              deliver it straight from our kitchen to your door along with
+              monthly bonus gift, whenever works best for you. You can change
+              delivery time and address daily!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-meals section-padding" id="meals">
+        <div class="container text-align">
+          <span class="subheading">meals</span>
+          <h2 class="heading-secondary">
+            FoodBae AI chooses from 2,000+ recipes
+          </h2>
+        </div>
+
+        <div
+          class="container grid grid-gap-meal grid--3-cols margin-bottom-md section"
+        >
+          <div class="meal customized-border">
+            <img
+              class="meal-img"
+              src="img/meals/meal-1.jpg"
+              alt="Dal Makahni"
+            />
+            <div class="meal-content">
+              <div class="meal-tag">
+                <span class="tag tag-veg">vegetarian</span>
+              </div>
+              <p class="meal-name">dal makhani</p>
+              <ul class="list-details">
+                <li class="list-detail">
+                  <ion-icon
+                    class="icon-main"
+                    name="restaurant-outline"
+                  ></ion-icon>
+                  <span><strong>By Course</strong> : Main Course</span>
+                </li>
+                <li class="list-detail">
+                  <ion-icon class="icon-main" name="wine-outline"></ion-icon>
+                  <span><strong>By Cuisine</strong> : North indian</span>
+                </li>
+                <li class="list-detail">
+                  <ion-icon class="icon-main" name="medal-outline"></ion-icon>
+                  <span><strong>NutriScore &reg; </strong> : 74</span>
+                </li>
+
+                <li class="list-detail">
+                  <ion-icon
+                    class="icon-main"
+                    name="accessibility-outline"
+                  ></ion-icon>
+                  <span><strong> Calories </strong> : 650</span>
+                </li>
+                <li class="list-detail">
+                  <ion-icon class="icon-main" name="star-outline"></ion-icon>
+                  <span><strong> Rating </strong> : 4.7 (432)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal customized-border">
+            <img
+              class="meal-img"
+              src="img/meals/meal-2.jpg"
+              alt="Dal Makahni"
+            />
+            <div class="meal-content">
+              <div class="meal-tag">
+                <span class="tag tag-veg">vegetarian</span>
+                <span class="tag tag-gluten">Gluten free</span>
+              </div>
+              <p class="meal-name">rava idli</p>
+              <ul class="list-details">
+                <li class="list-detail">
+                  <ion-icon
+                    class="icon-main"
+                    name="restaurant-outline"
+                  ></ion-icon>
+                  <span><strong>By Course</strong> : Breakfast </span>
+                </li>
+                <li class="list-detail">
+                  <ion-icon class="icon-main" name="wine-outline"></ion-icon>
+                  <span><strong>By Cuisine</strong> : South indian</span>
+                </li>
+                <li class="list-detail">
+                  <ion-icon class="icon-main" name="medal-outline"></ion-icon>
+                  <span><strong>NutriScore &reg; </strong> : 88</span>
+                </li>
+
+                <li class="list-detail">
+                  <ion-icon
+                    class="icon-main"
+                    name="accessibility-outline"
+                  ></ion-icon>
+                  <span><strong> Calories </strong> : 440</span>
+                </li>
+                <li class="list-detail">
+                  <ion-icon class="icon-main" name="star-outline"></ion-icon>
+                  <span><strong> Rating </strong> : 4.5 (339)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal media-query-meal customized-border">
+            <img
+              class="meal-img"
+              src="img/meals/meal-3.jpg"
+              alt="Dal Makahni"
+            />
+            <div class="meal-content">
+              <div class="meal-tag">
+                <span class="tag tag-nonveg">Non-vegetarian</span>
+              </div>
+              <p class="meal-name">chicken biryani</p>
+              <ul class="list-details">
+                <li class="list-detail">
+                  <ion-icon
+                    class="icon-main"
+                    name="restaurant-outline"
+                  ></ion-icon>
+                  <span><strong>By Course</strong> : Main Course</span>
+                </li>
+                <li class="list-detail">
+                  <ion-icon class="icon-main" name="wine-outline"></ion-icon>
+                  <span><strong>By Cuisine</strong> : South indian</span>
+                </li>
+                <li class="list-detail">
+                  <ion-icon class="icon-main" name="medal-outline"></ion-icon>
+                  <span><strong>NutriScore &reg; </strong> : 76</span>
+                </li>
+
+                <li class="list-detail">
+                  <ion-icon
+                    class="icon-main"
+                    name="accessibility-outline"
+                  ></ion-icon>
+                  <span><strong> Calories </strong> : 908</span>
+                </li>
+                <li class="list-detail">
+                  <ion-icon class="icon-main" name="star-outline"></ion-icon>
+                  <span><strong> Rating </strong> : 4.9 (534)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container all-recipes">
+          <a
+            href="/siteInfo/other.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            >See all recipes &rarr;</a
+          >
+        </div>
+      </section>
+      <section class="section-gallery section-padding" id="gallery">
+        <div class="container">
+          <span class="subheading">Gallery</span>
+          <h2 class="heading-secondary">Look at our little slice of heaven</h2>
+        </div>
+        <div class="gallery container content content-right">
+          <figure class="gallery__item">
+            <img
+              src="img/gallery/gallery-1.jpg"
+              alt="food image"
+              class="gallery-img"
+            />
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="img/gallery/gallery-2.jpg"
+              alt="food image"
+              class="gallery-img"
+            />
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="img/gallery/gallery-3.jpg"
+              alt="food image"
+              class="gallery-img"
+            />
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="img/gallery/gallery-4.jpg"
+              alt="food image"
+              class="gallery-img"
+            />
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="img/gallery/gallery-5.jpg"
+              alt="food image"
+              class="gallery-img"
+            />
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="img/gallery/gallery-6.jpg"
+              alt="food image"
+              class="gallery-img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--7">
+            <img
+              src="img/gallery/gallery-7.jpg"
+              alt="food image"
+              class="gallery-img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--8">
+            <img
+              src="img/gallery/gallery-8.jpg"
+              alt="food image"
+              class="gallery-img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--9">
+            <img
+              src="img/gallery/gallery-9.jpg"
+              alt="food image"
+              class="gallery-img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--10">
+            <img
+              src="img/gallery/gallery-10.jpg"
+              alt="food image"
+              class="gallery-img"
+            />
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="img/gallery/gallery-11.jpg"
+              alt="food image"
+              class="gallery-img"
+            />
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="img/gallery/gallery-12.jpg"
+              alt="food image"
+              class="gallery-img"
+            />
+          </figure>
+        </div>
+      </section>
+      <section class="section-testimonials section-padding" id="testimonials">
+        <div class="container text-align">
+          <span class="subheading">testimonials</span>
+          <h2 class="heading-secondary">
+            Once you try it, you'll get addicted
+          </h2>
+        </div>
+
+        <div class="slider content content-left">
+          <div class="slide">
+            <div class="testimonial grid grid--2-cols">
+              <div class="testimonial-img-box">
+                <img
+                  src="img/customer/devika.jpg"
+                  class="testimonial-img"
+                  alt="testimonial customer"
+                />
+              </div>
+              <div class="testimonial-text-box">
+                <p class="testimonial-heading">Best Food Service Ever</p>
+                <p class="testimonial-text">
+                  I am so happy I found you guys! Just received the tempura
+                  veggies and onion rings. Mmm, and those onions are hot!!
+                </p>
+                <p class="testimonial-name">Devika Sinha</p>
+                <p class="testimonial-loaction">Punjab, India</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="testimonial grid grid--2-cols">
+              <div class="testimonial-img-box">
+                <img
+                  src="img/customer/tarandeep.jpg"
+                  class="testimonial-img"
+                  alt="testimonial customer"
+                />
+              </div>
+              <div class="testimonial-text-box">
+                <p class="testimonial-heading">Awesome AI and Taste</p>
+                <p class="testimonial-text">
+                  The AI algorithm is crazy good, it chooses the right meals for
+                  me every time. It's amazing not to worry about food anymore!
+                </p>
+                <p class="testimonial-name">Tarandeep Sharma</p>
+                <p class="testimonial-loaction">Lucknow, India</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="testimonial grid grid--2-cols">
+              <div class="testimonial-img-box">
+                <img
+                  src="img/customer/shreya.jpg"
+                  class="testimonial-img"
+                  alt="testimonial customer"
+                />
+              </div>
+              <div class="testimonial-text-box">
+                <p class="testimonial-heading">You People Are Life Saver</p>
+                <p class="testimonial-text">
+                  FoodBae is a life saver! I just started a company, so there's
+                  no time for cooking. I couldn't live without my daily meals
+                  now!
+                </p>
+                <p class="testimonial-name">Shreya Bajaj</p>
+                <p class="testimonial-loaction">Mumbai, India</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="testimonial grid grid--2-cols">
+              <div class="testimonial-img-box">
+                <img
+                  src="img/customer/akansha.jpg"
+                  class="testimonial-img"
+                  alt="testimonial customer"
+                />
+              </div>
+              <div class="testimonial-text-box">
+                <p class="testimonial-heading">I'm In love with FoodBae</p>
+                <p class="testimonial-text">
+                  I got FoodBae for the whole family, and it frees up so much
+                  time! Plus, everything is organic and vegan and without
+                  plastic.
+                </p>
+                <p class="testimonial-name">Akansha Mishra</p>
+                <p class="testimonial-loaction">Kerala, India</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="testimonial grid grid--2-cols">
+              <div class="testimonial-img-box">
+                <img
+                  src="img/customer/karan.jpg"
+                  class="testimonial-img"
+                  alt="testimonial customer"
+                />
+              </div>
+              <div class="testimonial-text-box">
+                <p class="testimonial-heading">Thanks for Saving Time</p>
+                <p class="testimonial-text">
+                  Inexpensive, healthy and great-tasting meals, without even
+                  having to order manually! It feels truly magical. I'm happy
+                </p>
+                <p class="testimonial-name">Karan Mehra</p>
+                <p class="testimonial-loaction">Delhi, India</p>
+              </div>
+            </div>
+          </div>
+
+          <ion-icon
+            class="slider__btn slider__btn--left"
+            name="chevron-back-outline"
+          ></ion-icon>
+          <ion-icon
+            class="slider__btn slider__btn--right"
+            name="chevron-forward-outline"
+          ></ion-icon>
+          <div class="dots"></div>
+        </div>
+      </section>
+      <section class="section-features section-padding">
+        <div class="features section container grid grid--4-cols grid-gap">
+          <div class="feature">
+            <ion-icon class="icon" name="color-wand-outline"></ion-icon>
+            <p class="feature-heading">Never cook again</p>
+            <p class="feature-description">
+              Our subscriptions cover 365 days per year, even including major
+              holidays.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="icon" name="nutrition-outline"></ion-icon>
+            <p class="feature-heading">Local and organic</p>
+            <p class="feature-description">
+              We only use local, fresh and organic products to prepare your
+              meals.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="icon" name="leaf-outline"></ion-icon>
+            <p class="feature-heading">No waste</p>
+            <p class="feature-description">
+              All our partners only use reusable containers to package all your
+              meals.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="icon" name="pause-circle-outline"></ion-icon>
+            <p class="feature-heading">Pause anytime</p>
+            <p class="feature-description">
+              Going on vacation? Pause your subscription, and get refund for
+              unused days.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pricing section-padding" id="pricing">
+        <div class="container">
+          <span class="subheading">Pricing</span>
+          <h2 class="heading-secondary">
+            Taste delicious meal daily within budget
+          </h2>
+        </div>
+        <div class="pricing-carts container grid grid--2-cols grid-gap section">
+          <div class="pricing-container-type type-1">
+            <div class="pricing-header text-align">
+              <span class="plan-type"
+                >Starter <ion-icon name="checkbox-sharp"></ion-icon
+              ></span>
+              <p class="price"><span>INR</span> 3599</p>
+              <p class="price-description">
+                per month. That's just INR 120 per meal!
+              </p>
+            </div>
+            <div class="pricing-detail-box text-align">
+              <ul class="list-details margin-bottom-md">
+                <li class="list-detail">
+                  <ion-icon
+                    class="icon-main"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <p class="list-details-text">1 meal per day</p>
+                </li>
+                <li class="list-detail">
+                  <ion-icon
+                    class="icon-main"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <p class="list-details-text">Order from 11am to 9pm</p>
+                </li>
+                <li class="list-detail">
+                  <ion-icon
+                    class="icon-main"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <p class="list-details-text">Delivery is free</p>
+                </li>
+                <li class="list-detail">
+                  <ion-icon
+                    class="icon-main"
+                    name="close-circle-outline"
+                  ></ion-icon>
+                </li>
+              </ul>
+              <a href="#cta" class="btn btn--full margin-right-sm btn-pricing"
+                >Start Eating Delightly
+              </a>
+            </div>
+          </div>
+          <div class="pricing-container-type type-2">
+            <div class="pricing-header text-align">
+              <span class="plan-type"
+                >Complete <ion-icon name="bag-check-sharp"></ion-icon
+              ></span>
+              <p class="price"><span>INR</span> 6449</p>
+              <p class="price-description">
+                per month. That's just INR 108 per meal!
+              </p>
+            </div>
+            <div class="pricing-detail-box text-align">
+              <ul class="list-details margin-bottom-md">
+                <li class="list-detail">
+                  <ion-icon
+                    class="icon-main"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <p class="list-details-text">2 meals per day</p>
+                </li>
+                <li class="list-detail">
+                  <ion-icon
+                    class="icon-main"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <p class="list-details-text">Order 24/7</p>
+                </li>
+                <li class="list-detail">
+                  <ion-icon
+                    class="icon-main"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <p class="list-details-text">Delivery is free</p>
+                </li>
+
+                <li class="list-detail">
+                  <ion-icon
+                    class="icon-main"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <p class="list-details-text">Get access to latest recipes</p>
+                </li>
+              </ul>
+              <a href="#cta" class="btn btn--full margin-right-sm btn-pricing"
+                >Start Eating Delightly
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container grid">
+          <aside class="plan-details">
+            Prices include all applicable taxes. You can cancel at any time.
+            Both plans include the following:
+          </aside>
+        </div>
+      </section>
+
+      <section class="section-cta section-padding" id="cta">
+        <div class="container text-align">
+          <span class="subheading">FoodBae</span>
+          <h2 class="heading-secondary">Let's start our journey together</h2>
+        </div>
+        <div class="container section">
+          <div class="cta grid">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Get your first meal for free!</h2>
+              <p class="cta-text">
+                Healthy, tasty and hassle-free meals are waiting for you. Start
+                eating delightly today. You can cancel or pause anytime. And the
+                first meal is on us!
+              </p>
+              <form class="cta-form grid grid--2-cols" name="sign-up" netlify>
+                <div>
+                  <label for="name">Full name</label>
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="Jhon Smith"
+                    name="full-name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="select-where">Where did you hear from us?</label>
+                  <select id="select-where" name="select-where" required>
+                    <option value="">Please select an option :</option>
+                    <option value="facebook">Facebook ad</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="youtube">YouTube video</option>
+                    <option value="friends">Friends and family</option>
+                    <option value="others">others</option>
+                  </select>
+                </div>
+                <button class="btn cta-btn">Sign up now</button>
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Famliy enjoying meal"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer section">
+        <div class="logo-col">
+          <a href="#">
+            <img
+              src="img/FoodBea-logo-white.png"
+              alt="foodbae logo"
+              class="logo"
+          /></a>
+          <ul class="social-links">
+            <li>
+              <a
+                class="footer-link"
+                href="/siteInfo/other.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="/siteInfo/other.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="/siteInfo/other.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2027</span> by FoodBae, Inc. All
+            rights reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              G/167 , Govindpura near wifi hub, Barabanki. 225001
+            </p>
+            <p>
+              <a class="footer-link" href="tel:05248-40077">05248-40077</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@foodbae.com"
+                >hello@foodbae.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li>
+              <a
+                class="footer-link"
+                href="/siteInfo/other.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Create account</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="/siteInfo/other.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Sign in</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="/siteInfo/other.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >iOS app</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="/siteInfo/other.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Android app</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li>
+              <a
+                class="footer-link"
+                href="/siteInfo/other.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >About FoodBae</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="/siteInfo/other.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >For Business</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="/siteInfo/other.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Cooking partners</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="/siteInfo/other.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Careers</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li>
+              <a
+                class="footer-link"
+                href="/siteInfo/other.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Recipe directory
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="/siteInfo/other.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Help center</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="/siteInfo/other.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Privacy & terms</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <div class="developer">
+      <div class="container">
+        <p class="developer-description">
+          &copy; FoodBae has been designed and developed by &diam;
+          <a
+            class="developer-name"
+            href="/developer/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Gopal ji
+          </a>
+          &diam; for personal portfolio. Don't claim it as your own design.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

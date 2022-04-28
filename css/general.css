@@ -1,0 +1,242 @@
+/* 
+
+////////////// Design Decisions /////////////
+
+
+
+
+--- 01 TYPOGRAPHY SYSTEM
+
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights:  400 / 500 / 700
+
+- Line heights : 1/ 1.05 / 1.2 / 1.6 / 1.8
+
+
+- Letter spacing: -0.5px / 0.75px
+
+
+---------------------------------------------------------
+
+
+--- 02 COLORS : from roots 
+
+
+---------------------------------------------------------
+  
+
+
+--- 06 BORDER-RADIUS: 9px / 11px / 12px / 50px / 50%
+
+
+
+---------------------------------------------------------
+
+
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+
+---------------------------------------------------------  
+
+
+
+
+////////////////// End of design decisions //////////////////
+
+
+*/
+:root {
+  --color-primary: #2f9e44;
+  --color-primary-darker: #2a8e3d;
+  --color-primary-darkest: #267e36;
+  --color-primary-heading: #0e2f14;
+  --color-primary-lighter: #eaf5ec;
+  --color-green: #59d102;
+  --color-yellow: #ffea00;
+  --color-yellow-dark: #fab005;
+  --color-yellow-light: #fff7e6;
+  --color-orange-section: #fdf2e9;
+  --color-grey-dark: #333;
+  --color-grey-light: #bbb;
+  --color-grey-tint-1: #ccc;
+  --color-grey-tint-2: #eee;
+  --color-grey-tint-3: #aaa;
+  --color--white: #fff;
+  --color--tag-red: #f03e3e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--color-grey-default);
+  overflow-x: hidden;
+}
+
+/*****************************************/
+/* GENERAL REUSABLE COMPONENTS */
+/*****************************************/
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.section-padding {
+  padding: 7rem 0;
+}
+.grid {
+  display: grid;
+}
+.grid-gap {
+  column-gap: 5.2rem;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid--6-cols {
+  grid-template-columns: repeat(6, 1fr);
+}
+.grid--8-cols {
+  grid-template-columns: repeat(8, 1fr);
+}
+.grid-center-v {
+  align-items: center;
+}
+.text-align {
+  text-align: center;
+}
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 4.2rem;
+  margin-bottom: 3.2rem;
+  line-height: 1.05;
+}
+
+.heading-secondary {
+  font-size: 4.2rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  margin-bottom: 2.3rem;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: var(--color-primary);
+  color: var(--color--white);
+}
+.btn--full:hover,
+.btn--full:active {
+  background-color: var(--color-primary-darker);
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.088);
+  color: var(--color-grey-default);
+  background-color: var(--color--white);
+}
+.btn--outline:hover,
+.btn--outline:active {
+  transform: translateY(-2px);
+  background-color: var(--color--white);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.171);
+  color: var(--color-grey-default);
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.subheading {
+  display: block;
+  color: var(--color-primary-darker);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+  margin-top: 1.6rem;
+}
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+.customized-border {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 9px;
+}
+
+/* meal and pricing list formate  */
+
+.list-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.list-detail {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+.list-detail span {
+  display: block;
+  font-size: 1.4rem;
+}
+
+/* for image lazy loading */
+
+.lazy-img {
+  filter: blur(20px);
+}
