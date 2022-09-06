@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="description"
-      content="FoodBae is AI-powered Food subscription that will make you eat delicious and healthy 365 days per year. Eat well without breaking the bank, let FoodBae AI take care of your nutritional need"
+      content="FoodBae is AI-powered Food subscription that will make you eat delicious and healthy 365 days per year. Eat well without breaking the bank, let FoodBae AI take care of your nutritional need. Tasty healthy food at your doorstep every single day"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,6 +23,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <link rel="icon" href="./img/favicon.ico" />
     <link rel="icon" href="img/favicon-512.png" />
     <link rel="apple-touch-icon" href="img/apple-screen.png" />
     <link rel="manifest" href="manifest.webmanifest" />
@@ -30,7 +32,8 @@
     <link href="css/queries.css" rel="stylesheet" />
     <link href="css/animations.css" rel="stylesheet" />
     <script defer src="script.js"></script>
-    <title>FoodBae &mdash; AI powered Food Subscription!</title>
+
+    <title>FoodBae &mdash; Never Cook Again</title>
   </head>
   <body>
     <header class="header">
@@ -90,15 +93,12 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <picture>
-              <source srcset="img/food.webp" type="image/webp" />
-              <source srcset="img/food-min.png" type="image/png" />
-              <img
-                src="img/food-min.png"
-                class="hero-img"
-                alt="delicious food in three images"
-              />
-            </picture>
+            <img
+              data-src="img/food-min.png"
+              src="img/food-min-plc.png"
+              class="hero-img lazy-img"
+              alt="delicious food in three images"
+            />
           </div>
         </div>
       </section>
