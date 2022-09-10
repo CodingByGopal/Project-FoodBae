@@ -32,7 +32,7 @@ Lazy image loading using intersection observer Api
 
 ![Hero](https://raw.githubusercontent.com/CodingByGopal/imagesAsLink/62222e847be55c9d325901fbab781c92d98b791f/FoodBae-New-Hero.png)
 
-![How It Works](https://raw.githubusercontent.com/CodingByGopal/imagesAsLink/62222e847be55c9d325901fbab781c92d98b791f/Foodbae-New-How.png)
+![How It Works](https://raw.githubusercontent.com/CodingByGopal/imagesAsLink/main/FoodBae-how-section.png)
 
 ![Section Meals](https://raw.githubusercontent.com/CodingByGopal/imagesAsLink/main/meals.png)
 
