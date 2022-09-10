@@ -1,6 +1,6 @@
 # FoodBae - Never Cook Again
 
-FoodBae is front-end web development responsive landing page for food delivery website. Project was hand coded using Html , css and javascript not by using any framework, to showcase front-end development skills. Website follows major design rules like typography, color contrast , font size etc. Along with it, lazy image loading has been implemented for website better performance. FoodBae is hypothetical idea which offer AI-powered Food subscription that will make you eat delicious and healthy 365 days per year. Note - No actual AI is working in backend as it's a front-end skin for portfolio website.
+FoodBae is a front-end web development responsive landing page for a food delivery website. The project was hand-coded using Html, CSS, and javascript not by using any framework, to showcase front-end development skills. The website follows major design rules like typography, color contrast, font size, etc. Along with it, lazy image loading has been implemented for the website's better performance. FoodBae is a hypothetical idea that offers an AI-powered Food subscription that will make you eat delicious and healthy 365 days per year. Note - No actual AI is working in the backend as it's a front-end skin for the portfolio website.
 
 ## Resource
 
