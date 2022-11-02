@@ -240,3 +240,6 @@ body {
 .lazy-img {
   filter: blur(20px);
 }
+.smooth {
+  transition: all 0.3s;
+}
